@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Product preview card component</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="preview-card">
+            <picture>
+                <source
+                    media="(max-width: 600px)"
+                    srcset="./images/image-product-mobile.jpg"
+                />
+                <source srcset="./images/image-product-desktop.jpg" />
+
+                <img
+                    class="preview-card__hero"
+                    src="./images/image-product-desktop.jpg"
+                    alt="A bottle of perfume"
+                />
+            </picture>
+
+            <section class="preview-card__text-content">
+                <h3>Perfume</h3>
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+                <p class="preview-card__product-description">
+                    A floral, solar and voluptuous interpretation composed by
+                    Olivier Polge, Perfumer-Creator for the House of CHANEL.
+                </p>
+                <section class="preview-card__prices">
+                    <p class="preview-card__reduced-price">$149.99</p>
+                    <p class="preview-card__full-price">$169.99</p>
+                </section>
+                <button class="preview-card__button">
+                    <img src="./images/icon-cart.svg" />
+                    Add to Cart
+                </button>
+            </section>
+        </section>
+
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">A. Smith</a>.
+        </footer>
+    </body>
+</html>
